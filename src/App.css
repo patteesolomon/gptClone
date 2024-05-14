@@ -1,0 +1,138 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.side-bar{
+  background-image: linear-gradient(to bottom, #646cff, #61dafb);
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button{
+  border: solid 0.5px #fff rgba(255, 159, blue, 0.5);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+nav{
+  border-top: solid 0.5px #fff rgba(255, 159, blue, 0.5);
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.app{
+  background-color: #61dafb;
+  display: flex;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.info{
+  color: rgba(255, 159, blue, 0.5);
+  font-size: large;
+  padding: 10px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.history{
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+  display: flex;
+}
+
+.history li{
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.bottom-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container{
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+input{
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#10005a), to(#000000));
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: #000000 0px 0px 10px 0px;
+  rgba:(0, 0, 0, 0.2);
+  rgba:(0, 0, 0, 0.2);
+}
+
+input:focus{
+  outline: none;
+}
+
+#submit{
+  position: absolute;
+  bottom: 15px;
+  right: 0px;
+  cursor: pointer;
+}
