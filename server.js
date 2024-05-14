@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const API_KEY = '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';
+const API_KEY = ''; // get a new key
 
 app.post('/completions', async (req, res) => {
     const options = {
