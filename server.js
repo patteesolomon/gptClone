@@ -7,13 +7,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const API_KEY = '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';
 
 app.post('/completions', async (req, res) => {
     const options = {
         method: 'POST',
         headers: {
-            "Authorization": 'Bearer ' + API_KEY,
+            "Authorization": 'Bearer ' + 'API_KEY',
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
